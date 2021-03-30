@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1539162722 source:g:\c\binary sort\main.c
+	<stdio.h>
+	<stdlib.h>
+

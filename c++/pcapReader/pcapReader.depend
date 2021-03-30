@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1579533184 source:g:\c++\pcapreader\main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<string>
+

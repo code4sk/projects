@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1547713343 source:g:\c++\hdf\main.cpp
+	<iostream>
+	<cmath>
+

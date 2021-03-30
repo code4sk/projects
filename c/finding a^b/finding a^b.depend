@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1535624984 source:g:\c\finding a^b\main.c
+	<stdio.h>
+	<stdlib.h>
+

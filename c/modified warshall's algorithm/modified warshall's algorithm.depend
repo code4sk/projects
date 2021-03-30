@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538505239 source:g:\c\modified warshall's algorithm\main.c
+	<stdio.h>
+	<stdlib.h>
+

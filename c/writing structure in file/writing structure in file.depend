@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1532023445 source:d:\c\writing structure in file\main.c
+	<stdio.h>
+	<stdlib.h>
+

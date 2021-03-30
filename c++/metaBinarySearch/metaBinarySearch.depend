@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600251384 source:c:\users\user\desktop\projects\c++\metabinarysearch\main.cpp
+	<iostream>
+	<cmath>
+

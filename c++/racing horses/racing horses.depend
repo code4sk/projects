@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1540362869 source:g:\c++\racing horses\main.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+

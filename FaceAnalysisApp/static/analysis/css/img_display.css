@@ -1,0 +1,265 @@
+body{
+  overflow-x:hidden;
+  font-family: 'Raleway', sans-serif;
+  background-color:rgba(138, 149, 158, 10%);
+}
+
+.cam{
+	display:flex;
+	flex-direction: row;
+	background-color:#210070;
+	color:white;
+	padding:10px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+	box-shadow:10px 10px 20px rgba(138, 149, 158, 60%);
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:10px;
+	justify-content: center;
+}
+
+.heading-train{
+	margin-right:20px;
+}
+
+.train-button{
+	display: none;
+}
+
+
+
+.heading-train{
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+.heading-train a{
+	background-color:#fff;
+	padding:6px 30px;
+	color:210070;
+	font-size:14px;
+	border-radius:30px;
+}
+
+.heading-train a:hover{
+	background-color:#210070;
+	border:2px solid #fff;
+	padding:6px 30px;
+	color:#fff;
+	font-size:14px;
+	border-radius:30px;
+	text-decoration:none;
+	transition: .1s ease-out;
+}
+
+
+
+
+
+/*==================MORE PHOTOS===============*/
+.image-box{
+	margin:20px;
+}
+.image-box img{
+	width: 200px;
+	border-radius:20px;
+	box-shadow: 10px 10px 20px rgba(138, 149, 158, 40%);
+}
+
+.image-box img:hover{
+	width: 200px;
+	border-radius:20px;
+	box-shadow: 10px 10px 20px rgba(138, 149, 158, 40%);
+	transform: scale(1.5);
+	transition: .5s ease-out;
+}
+
+.more-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+
+.image-box{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+
+
+.heading{
+	text-align:center;
+	margin:10px;
+	font-weight:bold;
+
+}
+
+
+.remove-image {
+	background-color:#ccccff;
+	border-radius:30px;
+	margin-top:10px;
+	color:white;
+}
+/*===================================NO PHOTO UPLOADED YET=============*/
+
+.no-photos{
+	text-align: center;
+	font-weight:bold;
+}
+
+
+/*================== MODAL================*/
+.account-modal{
+	font-family:'Roboto', serif;
+}
+
+.account-modal .modal-header{
+	border-bottom:none !important;
+	padding-bottom:0;
+
+}
+
+
+.account-modal .modal-header{
+ text-align: center !important;
+}
+
+
+.account-modal .modal-footer{
+	border-top:none !important;
+	padding-top:0;
+	margin:0 auto;
+}
+
+
+
+.account-button-modal a{
+	background-color:#210070;
+	padding:6px 30px;
+	color:white;
+	font-size:14px;
+	border-radius:30px;
+}
+
+.account-button-modal a:hover{
+	background-color:#fff;
+	border:1px solid #210070;
+	padding:6px 30px;
+	color:black;
+	font-size:14px;
+	border-radius:30px;
+	text-decoration:none;
+	transition: .1s ease-out;
+}
+
+.account-modal .modal-content{
+	border-radius:30px;
+	box-shadow:0 0 10px #000;
+}
+
+
+
+.capture{
+	background-color:#d5d5d5;
+	padding:6px 30px;
+	color:#000;
+	font-size:14px;
+	border-radius:0px;
+	border:1px solid #000;
+}
+
+.capture:hover{
+	background-color:#fff;
+	border:1px solid #210070;
+	padding:6px 30px;
+	color:black;
+	font-size:14px;
+	border-radius:0px;
+	text-decoration:none;
+	transition: .1s ease-out;
+}
+
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color:rgba(138, 149, 158, 10%);
+  color: white;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.delete-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.delete-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}

@@ -1,0 +1,103 @@
+{% extends 'FaceAnalysisApp/base.html' %}
+{%block title%}Analysis{%endblock%}
+{% load static %}
+{% block css%}   
+	<link href="{% static 'analysis/css/analysis.css'%}" rel="stylesheet">
+  <link href="{% static 'analysis/css/header.css'%}" rel="stylesheet">
+  <link href="{% static 'analysis/css/login.css'%}" rel="stylesheet">
+  
+  <script type="text/javascript" src="{% static 'analysis/js/analysis.js'%}"></script>
+
+   <style>
+    a {
+    text-decoration: none;
+    background-color: transparent;
+}
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+  </style>
+{% endblock %}
+{%block auth%}
+
+          <li class="nav-item study">
+<!--          <a class="nav-link" href="">Camera Display</a>-->
+        </li>
+{%endblock%}
+
+{%block body%}
+<br>
+<!-- <form method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">Submit</button>
+</form>
+ -->
+
+
+
+<!-- Lgin Modal -->
+<div class="wrapper">
+
+    <div class="login-register">
+
+        <!--  <div class="close">
+     <p class="close-button">X</p>
+   </div>  -->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="my-data">
+                    <div class="my-data-text">
+                        <h2 class="heading">Login to your Account</h2>
+                        <div class="my-input-boxes">
+                            <form method='post'>
+                                {% csrf_token %}
+                                <div class="email-id">
+                                    <input required type="email" class="input-box2" id="email" name="email" aria-describedby="emailHelp" placeholder="Email ID">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <!--login-id closed-->
+                                <div class="user-id">
+                                    <input required type="text" class="input-box2" id="client_id" name="client_id" aria-describedby="emailHelp" placeholder="User ID">
+                                </div>
+                                <div class="password">
+                                    <input required type="password" class="input-box2" id="password" name="password" , placeholder="Password">
+                                </div>
+                                <!-- password closed-->
+                        </div>
+                        <!--my-input-boxes closed-->
+
+                        <div class="error">
+                            <p class="error-msg" style="color:red;">Invalid email and/or password</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+
+                    </div>
+                    <!--my-data-text-->
+
+                </div>
+                <!--my-data-->
+
+            </div>
+
+        </div>
+        <!-- col closed-->
+    </div>
+    <!-- row closed-->
+
+
+
+</div>
+<!-- login register-->
+
+</div>
+<!--wrapper closed-->
+
+{%endblock%}

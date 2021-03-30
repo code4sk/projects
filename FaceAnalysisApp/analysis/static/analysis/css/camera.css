@@ -1,0 +1,115 @@
+body{
+  overflow-x:hidden;
+  font-family: 'Raleway', sans-serif;
+  background-color:rgba(138, 149, 158, 10%);
+}
+
+.all-cameras{
+	margin-top:20px;
+}
+
+.image-box img{
+	width:500px;
+	height:300px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	padding:10px;
+	box-shadow:0px 0px 20px rgba(138, 149, 158, 60%);
+}
+
+
+.analytic-box img{
+	width:1000px;
+	height:600px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	padding:10px;
+	box-shadow:0px 0px 20px rgba(138, 149, 158, 60%);
+}
+
+.my-camera{
+	margin-bottom:5px;
+}
+
+.analytic-box-2 img{
+margin-left:auto;
+margin-right:auto;
+display:block; 
+
+}
+.table-ana{
+	padding-right:20px;
+}
+
+.analy{
+	text-align:center;
+	font-weight:bold;
+	padding:20px;
+}
+
+.select-cam{
+	position:relative;
+	top:-40px;
+	text-align:center;
+	color:black;
+	font-weight:bold;
+}
+
+select{
+	background-color:transparent;
+	color:black;
+
+}
+
+option{
+	background-color:white;
+	color:black;
+}
+
+
+.text-camera{
+	text-align: center;
+	font-size:20px;
+	font-weight:bold;
+	position:relative;
+	top:-20px;
+}
+
+
+button{
+border-radius:0px;
+display:inline-block!important;
+border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;
+
+}
+
+#button-container div{
+    display:inline-block;
+    width:1030px;
+}
+
+#b1{
+	background-color:#00004d;
+	width:auto;
+	height:40px;
+	color:white;
+	display:block;
+	border: 0px solid black;
+		margin-top: 0px;
+		margin-left: 2px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+#b2{
+	background-color:#00004d;
+	width:auto;
+	height:40px;
+	color:white;
+	display:block;
+	margin-top: 10px;
+	margin-left: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1535202996 source:g:\c\checking the validity of expression\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

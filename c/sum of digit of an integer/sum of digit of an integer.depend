@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1535372188 source:g:\c\sum of digit of an integer\main.c
+	<stdio.h>
+	<stdlib.h>
+

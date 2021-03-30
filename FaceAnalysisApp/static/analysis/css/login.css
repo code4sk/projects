@@ -1,0 +1,290 @@
+body{
+  overflow-x:hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #fff;
+    opacity: 1;
+}
+
+
+/*========================navbar================*/
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    font-weight:bold;
+}
+
+.welcome{
+  font-weight:bold;
+}
+/*==============CAORUSEL================*/
+ /* .carousel-inner img {
+      width: 200px;
+      height: 200px;
+      margin-bottom:50px;
+      margin-top:100px;
+  }
+.teach img{
+  width:350px;
+  height:200px;
+}
+
+  .carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+
+*/
+
+/*===================HEADING==============*/
+
+.heading{
+	font-size:35px;
+	font-weight:bold;
+}
+
+
+
+
+/*===================SOCIAL ICONS==============*/
+/*.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}*/
+
+
+/*===================LOGO=============*/
+
+.logo{
+  position:absolute;right:10px;
+  z-index:1000;
+  padding:20px;
+  left:5px;
+
+}
+
+.close{
+  position:absolute;
+  right:5px;
+  top:15px;
+}
+
+.close a{
+  color:black;
+}
+
+.logo-text{
+  color:white;
+  font-weight:bold;
+  padding-left:20px;
+}
+
+.bg-light{
+  background-color:#00004d !important;
+}
+
+/*===================my-data=============*/
+
+/*.logo{
+	position:absolute;
+	padding:20px;
+	
+}
+
+
+.close-button{
+	position:absolute;
+	right:10%;
+	top:10%;
+	z-index:20000;
+}
+*/
+
+
+.my-data-text{	
+	text-align:center;
+
+
+}
+
+.my-data{
+
+	margin-top:10%;
+
+}
+
+
+
+/*===================INPUT BOXES============*/
+.my-input-boxes{
+	margin:20px;
+}
+
+
+
+.input-box2 {
+   /* border-radius: 25px;
+    background-color:#eef5f3;*/
+    border:none;
+    border-bottom:1px solid #ced4da;
+    padding: 20px; 
+    width: 400px;
+    height: 15px;
+    margin:10px;    
+}
+
+
+/*==================LOGIN BUTTON============*/
+
+.button{
+	margin:20px;
+  margin-top:30px;
+
+}
+.button a{
+	
+	padding:10px 60px;
+	border-radius:30px;	
+}
+
+.signup a{
+  
+  padding:15px 55px;
+  border-radius:30px; 
+}
+
+.button a:hover{
+	text-decoration:none;
+	box-shadow: 0 8px 6px -6px black;
+
+}
+
+.login a{
+background-color:#00004d/*#4c907b*/;
+color:white;
+}
+
+.signup a{
+background-color:white;
+color:black;
+}
+
+
+/*==================SIGNUP DATA============*/
+/*.my-signup-data{
+	text-align:center;
+	background-color:#00aeff;
+	height:100vh;
+	color:white;*/
+	/*display:flex;
+	align-items:center;
+	justify-content: center;*/
+
+
+/*
+}
+
+.my-signup-data-text{
+	text-align:center;
+}
+
+.discover{
+	padding:10px 20px;
+
+}*/
+
+
+
+@media(max-width:576px){
+	.input-box2 {
+    border-radius: 0px;
+     border:none;
+    /*border: 2px solid #00aeff;*/
+   /* background-color:#d5d5d5;*/
+   border-bottom:1px solid #000;
+   
+    padding: 20px; 
+    width: 300px;
+    height: 15px;
+    margin:10px;  
+
+}
+.logo-text{
+  color:white;
+  font-size:14px;
+  font-weight:bold;
+  padding-left:20px;
+}
+
+.heading{
+  font-size:30px;
+  font-weight:bold;
+}
+
+.button a{
+  
+  padding:12px 40px;
+  border-radius:30px;
+  
+}
+/*.signup a{
+  
+  padding:15px 35px;
+  border-radius:30px; 
+}
+
+
+.teach img{
+  width:300px;
+  height:200px;
+  padding-bottom:20px;
+}*/
+
+}

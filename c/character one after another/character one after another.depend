@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1533746698 source:g:\c\character one after another\main.c
+	<stdio.h>
+	<stdlib.h>
+

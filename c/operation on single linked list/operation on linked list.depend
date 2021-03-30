@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1534422372 source:g:\c\operation on linked list\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1534768130 source:g:\c\operation on single linked list\main.c
+	<stdio.h>
+	<stdlib.h>
+

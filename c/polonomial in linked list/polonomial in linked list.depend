@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1534623887 source:g:\c\polonomial in linked list\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

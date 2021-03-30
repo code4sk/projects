@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1538727310 source:g:\c\searching substring\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

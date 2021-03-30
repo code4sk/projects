@@ -1,0 +1,33 @@
+/*========================navbar================*/
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    font-weight:bold;
+}
+
+.welcome{
+  font-weight:bold;
+}
+
+/*===================LOGO=============*/
+
+.logo{
+  position:absolute;right:10px;
+  z-index:1000;
+  padding:20px;
+  left:5px;
+
+}
+
+.logo-text{
+  color:white;
+  font-weight:bold;
+  padding-left:20px;
+}
+
+.bg-light{
+  background-color:#00004d !important;
+}

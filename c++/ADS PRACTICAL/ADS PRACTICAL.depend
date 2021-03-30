@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1514140574 source:c:\users\user\desktop\projects\c++\ads practical\main.cpp
+	<iostream>
+
+1601407549 source:c:\users\user\desktop\projects\c++\ads practical\kmp.cpp
+	<bits/stdc++.h>
+

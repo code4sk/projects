@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1541775536 source:g:\c++\operator overloading\main.cpp
+	<iostream>
+	<cstring>
+	<string.h>
+

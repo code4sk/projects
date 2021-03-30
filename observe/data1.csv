@@ -1,0 +1,11 @@
+Country,Age,Salary,Purchased
+France,44,7.20E+04,No
+Spain,27,4.80E+04,Yes
+Germany,30,5.40E+04,No
+Spain,38,6.10E+04,No
+Germany,40,nan,Yes
+France,35,5.80E+04,Yes
+Spain,nan,5.20E+04,No
+France,48,7.90E+04,Yes
+Germany,50,8.30E+04,No
+France,37,6.70E+04,Yes

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1532175000 source:d:\c\printing pattern square\main.c
+	<stdio.h>
+	<stdlib.h>
+

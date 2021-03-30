@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1539275505 source:g:\c\closed hashing with line probing\main.c
+	<stdio.h>
+	<stdlib.h>
+

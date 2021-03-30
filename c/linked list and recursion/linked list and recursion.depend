@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1535532360 source:g:\c\linked list and recursion\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
