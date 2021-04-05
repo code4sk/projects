@@ -166,6 +166,8 @@ def capture_face(request, camera_id=0):
     print(camera_id)
     try:
         camera_url = Camera.objects.get(id=camera_id).url
+        camera_url = str(camera_url)
+        # camera_url += "video"
     except Exception as e:
         camera_url = 0
     if camera_url == "0":

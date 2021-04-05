@@ -142,11 +142,11 @@ class VideoCamera(object):
 
     def create_classifier(self, image_database):
         if not os.path.exists('model.h5'):
-            mapping, trainX, trainy = create_classifier_data(image_database)
+            mapping, trainX, trainy = self.create_classifier_data(image_database)
             classifier = models.Sequential()
             classifier.add(layers.Dense(64, activation='relu', input_shape=(128,)))
             classifier.add(layers.Dense(len(os.listdir(image_database)), activation='softmax'))
-            classifier.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['accuracy'])
+            classifier.compile(optimizer='Adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
             train_labels = to_categorical(trainy)
             history = classifier.fit(trainX, train_labels, epochs=100, batch_size=64)
             classifier.save("model.h5")
@@ -196,12 +196,13 @@ class VideoCamera(object):
                 face_names = self.clf.predict(testX)
                 yhat_test = []
                 for i in face_names:
-                    face = i
+                    # face = i
                     yhat_test.append(np.argmax(i))
                 face_names = yhat_test
                 print(face_names)
+                print()
                 self.request.faces = face_names
-
+                face = ""
                 # Display the results
                 for (x, y, w, h), name in zip(face_locations, face_names):
                     x *= 4
@@ -211,8 +212,10 @@ class VideoCamera(object):
                     font = cv2.FONT_HERSHEY_DUPLEX
                     display = str(self.mapping[name])
                     print(display)
-                    face = display
-                    cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 1)
+                    face += display + " "
+
+                    # cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 1)
+                    cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
                     cv2.putText(frame, display, (x + w + 6, y + h - 6), font, 1.0, (255, 255, 255), 1)
             return frame
 
@@ -245,6 +248,7 @@ class VideoCamera(object):
 def predict(recog, frame):
     frame = recog(frame)
 
+
 def gen(camera):
     global i
     i = 0
@@ -268,10 +272,14 @@ def face_alignment_and_detection(request, camera_id=0):
 
     try:
         camera_url = Camera.objects.get(id=camera_id).url
+        camera_url = str(camera_url)
+        camera_url += "video"
+        print("watch")
     except Exception as e:
         camera_url = 0
     if camera_url == "0":
         camera_url = int(camera_url)
+    # camera_url = "http://192.168.1.12:8080/video"
     return StreamingHttpResponse(gen(VideoCamera(camera_url, request)), content_type='multipart/x-mixed-replace; boundary=frame')
 
 

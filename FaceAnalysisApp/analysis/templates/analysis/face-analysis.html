@@ -29,10 +29,11 @@ body {
 {%endblock%}
 
 {%block body%}
+<div style="text-align:center;padding:10px;">
 <br>
-<img src="{% url 'analysis:face-recognition' camera_id=camera_id %}" width="500px" height="500px"> </img>
+<img src="{% url 'analysis:face-recognition' camera_id=camera_id %}" width="600px" height="560px"> </img>
 <h1 style="color: black" id="face">Face: {{request.face}}</h1>
-
+</div>
 <script>
 a = document.getElementById('face');
 

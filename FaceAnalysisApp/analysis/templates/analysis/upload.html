@@ -89,7 +89,7 @@ body {
               {{person}}
             </td>
             <td>
-              <a href="{% url 'analysis:delete-person' person_id=person.person_id %}"><img src="https://img.icons8.com/flat_round/24/000000/delete-sign.png"/ title="Delete"></a>
+              <a href="{% url 'analysis:delete-person' person_id=person.person_id %}"><img src="https://img.icons8.com/flat_round/24/000000/delete-sign.png" title="Delete"></a>
             </td>
             <td>
               <a href="{% url 'analysis:display-image' person_id=person.person_id %}"><img src="https://img.icons8.com/nolan/24/visible.png" title="Read"></a>
@@ -135,13 +135,12 @@ body {
   </div><!--row-->
 </div><!--list name-->
 
-<div id="train-modal" style="display:none;z-index:22;background-color:lightblue;text-align:center;
-position:absolute;">
-    <video width="500px" autoplay loop muted style="margin:40px auto;">
+<div id="train-modal" style="display:none;z-index:22;background-color:black;text-align:center;width:100%;height:100vh; position:absolute;z-index:5;left:0;top:0;">
+    <video autoplay loop muted style="margin:40px auto;width:80%;height:80%">
         <source src="/media/videos/train-load.mp4" type="video/mp4">
     </video>
     <br>
-    <span>Still loading...</span>
+    <span style="color:wheat">Still loading...</span>
 </div>
 
 <script>

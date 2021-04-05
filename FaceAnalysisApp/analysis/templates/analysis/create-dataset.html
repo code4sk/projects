@@ -28,10 +28,13 @@ body {
 {%endblock%}
 
 {%block body%}
-<br>
-<img src="{% url 'analysis:capture-face' camera_id=camera_id %}" width="500px" height="500px"> </img>
-<br>
-<a style="color: black" href="{% url 'analysis:save-face' person_id=person_id %}" id="capture">Capture</a>
+<div style="text-align:center;padding:10px;">
+    <br>
+    <img src="{% url 'analysis:capture-face' camera_id=camera_id %}" width="500px" height="500px"> </img>
+    <br>
+    <button class="btn btn-primary" href="{% url 'analysis:save-face' person_id=person_id %}" id="capture">Capture</button>
+</div>
+
 <script>
 
 a = document.getElementById('capture');
@@ -44,6 +47,7 @@ a.addEventListener('click',(e)=>{
     success: function(result){
 
         console.log(result);
+        alert("Image Saved");
     },
     error: function(e){
     console.log("some error", e);
