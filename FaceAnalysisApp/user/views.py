@@ -14,19 +14,21 @@ class LoginView(View):
         # return render(request, 'user/login.html', {'form': form})
 
     def post(self, request):
-        form = LoginForm(request.POST)
-        if form.is_valid():
-            user = User.objects.filter(client_id=form.cleaned_data.get('client_id'))
-            if user:
-                user = user[0]
-                if user.check_password(form.cleaned_data.get('password')):
-                    login(request, user)
-                    return redirect('analysis:upload')
-                return redirect('user:login')
-            else:
-                return redirect('user:login')
+        email = request.POST.get('email')
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        print('ok')
+        user = User.objects.filter(email=email, username=username)
+        if user:
+            print('ok')
+            user = user[0]
+            if user.check_password(password):
+                login(request, user)
+                return redirect('analysis:upload')
+            return redirect('user:login')
         else:
-            return redirect('analysis:upload')
+            return redirect('user:login')
+
 
 class LogoutView(View):
     def get(self, request):

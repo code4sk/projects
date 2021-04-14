@@ -126,13 +126,13 @@ def create_classifier(image_database):
     return classifier, mapping
 
 
-# @method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class Home(View):
     def get(self, request):
         return redirect('analysis:upload')
 
 
-# @method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class Upload(View):
     def get(self, request):
         people = Person.objects.all()
@@ -161,7 +161,7 @@ class Upload(View):
             return redirect('analysis:display-image', person_id= p.person_id)
 
 
-# @method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class DisplayImage(View):
     def get(self, request, person_id):
         p = Person.objects.get(person_id=person_id)
@@ -183,7 +183,7 @@ class DisplayImage(View):
                                                                'cameras': cameras})
 
 
-# @method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class DeletePerson(View):
     def get(self, request, person_id):
         person = Person.objects.get(person_id=person_id)
@@ -199,39 +199,39 @@ class DeletePerson(View):
         return redirect('analysis:upload')
 
 
-# @method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class Train(View):
     def get(self, request):
         classifier, mapping = create_classifier(image_database)
         return HttpResponse('done')
 
 
-# @method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class FaceAnalysis(View):
     def get(self, request):
         camera_id = request.GET.get('camera_id', 0)
         return render(request, 'analysis/face-analysis.html', {'camera_id': camera_id})
 
 
-# @login_required
+@login_required
 def face_recognition(request, camera_id):
     # camera_url = CameraUrl.objects.filter().get(name=cam_obj).url
     return face_alignment_and_detection(request, camera_id)
 
 
-# @login_required
+@login_required
 def get_faces(request):
     return get_faces_names(request)
 
 
-# @method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class CreateDataset(View):
     def get(self, request, person_id):
         camera_id = request.GET.get('camera_id', 0)
         return render(request, 'analysis/create-dataset.html', {'person_id': person_id, 'camera_id': camera_id})
 
 
-# @method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class DeleteImage(View):
     def get(self, request, id):
         p = Pic.objects.get(id=id)
@@ -241,6 +241,7 @@ class DeleteImage(View):
         return redirect('analysis:display-image', person_id=person_id)
 
 
+@method_decorator(login_required, name='dispatch')
 class CreateCamera(View):
     def get(self, request):
         form = CameraForm()

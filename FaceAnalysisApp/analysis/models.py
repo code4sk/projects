@@ -1,5 +1,6 @@
 from django.db import models
 from django.db.models.signals import pre_save
+from django.template.defaultfilters import slugify
 from Crypto import Cipher
 
 
@@ -36,7 +37,11 @@ class Pic(models.Model):
 
 def assign_person_id(sender, **kwargs):
     instance = kwargs['instance']
-    instance.person_id = instance.name
+    ctr = 1
+    instance.person_id = slugify(instance.name + ' ' + str(ctr))
+    if Person.objects.filter(person_id=instance.person_id):
+        ctr += 1
+    instance.person_id = slugify(instance.name + ' ' + str(ctr))
 
 
 pre_save.connect(assign_person_id, Person)
